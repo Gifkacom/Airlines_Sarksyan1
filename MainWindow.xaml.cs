@@ -28,7 +28,7 @@ namespace Airlines_Sarksyan1
         }
         private void frame_Navigated(object sender, NavigationEventArgs e)
         {
-            // Ваш код обработки навигации
+            
         }
         public void OpenPage(Page Page)
         {
