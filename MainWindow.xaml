@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Airlines_Sarksyan1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" MinHeight="450" MinWidth="800">
     <Grid>
-        
+        <Grid Height="70" VerticalAlignment="Top" Background="blue">
+            <Image Width="50" Height="50" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10, 10, 10, 10" Source="/Images/icon_plane.png"></Image>
+            <Label HorizontalAlignment="Left" Content="Управление авиалиниями" Foreground="white" Margin="74,0,0,34" Height="26" VerticalAlignment="Bottom"/>
+            <Button VerticalAlignment="Top" HorizontalAlignment="Right" Width="100" Height="25" Content="Выйти" Margin="0,19,0,0"/>
+        </Grid>
+        <Frame x:Name="frame" NavigationUIVisibility="Hidden" Navigated="frame_Navigated" Margin="0,70,0,0"/>
     </Grid>
 </Window>
