@@ -20,14 +20,24 @@ namespace Airlines_Sarksyan1
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static MainWindow init;
         public MainWindow()
         {
             InitializeComponent();
+            init = this;
         }
-
         private void frame_Navigated(object sender, NavigationEventArgs e)
         {
-
+            // Ваш код обработки навигации
         }
+        public void OpenPage(Page Page)
+        {
+            frame.Navigate(Page);
+        }
+        private void Exit(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
     }
 }

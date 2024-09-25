@@ -25,9 +25,9 @@ namespace Airlines_Sarksyan1.Pages
             InitializeComponent();
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void Search(object sender, RoutedEventArgs e)
         {
-
+            MainWindow.init.OpenPage(new Pages.Ticket(from.Text, to.Text)); // Открытие страницы поиска билетов
         }
     }
 }
