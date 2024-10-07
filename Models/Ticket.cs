@@ -8,6 +8,8 @@ namespace Airlines_Sarksyan1.Models
 {
     public  class Ticket
     {
+        private int price;
+
         public string Price {get; set;}
 
         public string From {get; set;}
@@ -25,6 +27,13 @@ namespace Airlines_Sarksyan1.Models
             this.Price = price;
             this.TimeStart = timeStart;
             this.TimeWay = timeWay;
+        }
+
+        public Ticket(int price, string from, string to)
+        {
+            this.price = price;
+            From = from;
+            To = to;
         }
     }
 }
